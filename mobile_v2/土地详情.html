@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <title>神州土地手机版-土地详情页</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta charset="utf-8">
+    <meta name="applicable-device" content="mobile">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="favicon.ico">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="format-detection" content="telephone=no, email=no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <link rel="stylesheet" type="text/css" href="style/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="style/reset.css">
+    <!-- <link href="style/normalize.css" rel="stylesheet"> -->
+    <link href="style/main.css" rel="stylesheet">
+    <script type="text/javascript">
+        (function(doc, win) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function() {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    if (clientWidth >= 750) {
+                        docEl.style.fontSize = '100px';
+                    } else {
+                        docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+                    }
+                };
+
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window);
+    </script>
+    <script type="text/javascript">
+        // var UA = navigator.userAgent;
+        // if (UA.match(/Android/i) || (UA.indexOf('iPhone') != -1) || (UA.indexOf('iPod') != -1)) {
+        //     window.location = 'http://m.tudi66.com/';
+        // }
+        // var ua = navigator.userAgent.toLowerCase();
+        // if (/iphone|ipad|ipod/.test(ua)) {
+        // alert("iphone");
+        // } else if (/android/.test(ua)) {
+        // alert("android");
+        // }
+    </script>
+</head>
+
+<body>
+<div class="wrapper">
+    <div class="main_page">
+        <header class="common_header flexbox clearfix">
+            <div class="back_rest">
+                <a href="#" title="">
+                    <img src="images/icon_btn_back_rest.png" alt="" class="full">
+                </a>
+            </div>
+            <h1 class="flex1">土地详情</h1>
+        </header>
+        <div class="banner_swiper landImg">
+            <div class="focusImage landImg" id="focusImage">
+                <ul class="swiper-wrapper uls">
+                    <li class="swiper-slide"><img src="images/landinfo.jpg" /></li>
+                    <li class="swiper-slide"><img src="images/land.jpg" /></li>
+                    <li class="swiper-slide"><img src="images/banner.jpg" /></li>
+                </ul>
+                <div class="swiper-pagination on ols landMore"></div>
+            </div>
+        </div>
+        <div class="land_info_base_title">
+            <h4>河北省邢台市平乡县平乡镇四百亩土地出租河北省邢台市平乡县平乡镇四百亩土地出租</h4>
+            <div class="land_info_base_price clearfix">
+                <div class="fl price">
+                    <b>￥560万</b><span>/亩/年</span>
+                </div>
+                <div class="fr icon_already">
+                    <img src="images/icon_already.png" alt="">已预约
+                </div>
+            </div>
+        </div>
+        <div class="land_info_base_chat">
+            <div class="land_info_base_chattop">
+                <img src="images/icon_info.png" alt="小编点评">小编点评
+            </div>
+            <p>
+                交通便利，灌溉方便，适合多种农作物，果树种植，可发展多元农业。交通便利，灌溉方便，适合多种农作物。
+            </p>
+        </div>
+        <div>
+            <div class="land_info_bar flexbox">
+                <a href="javascript:;" title="基本信息" class="flex1 on">基本信息</a>
+                <a href="javascript:;" title="详细信息" class="flex1">详细信息</a>
+            </div>
+            <div class="">
+                <!-- 基本信息 -->
+                <div class="land_info_baseinfo tudi">
+                    <div class="land_info_baseinfoflex">
+                        <div class="land_info_baseinfoflexl">土地类型</div>
+                        <div class="land_info_baseinfoflexr">
+                            耕地水浇地
+                        </div>
+                    </div>
+                    <div class="land_info_baseinfoflex">
+                        <div class="land_info_baseinfoflexl">流转用途</div>
+                        <div class="land_info_baseinfoflexr">
+                            <span>现代农业</span>
+                            <span>生态农业</span>
+                            <span>综合农业</span>
+                            <span>乡村旅游</span>
+                            <span>其他</span>
+                        </div>
+                    </div>
+                    <div class="land_info_baseinfoflex">
+                        <div class="land_info_baseinfoflexl">流转方式</div>
+                        <div class="land_info_baseinfoflexr">
+                            转让
+                        </div>
+                    </div>
+                    <div class="land_info_baseinfoflex">
+                        <div class="land_info_baseinfoflexl">流转年限</div>
+                        <div class="land_info_baseinfoflexr">
+                            15年
+                        </div>
+                    </div>
+                    <div class="land_info_baseinfoflex">
+                        <div class="land_info_baseinfoflexl">土地位置</div>
+                        <div class="land_info_baseinfoflexr">
+                            <img src="images/icon_bg_location_rest.png" alt="" class="icon_bg_location_rest">安徽/合肥/长丰县
+                        </div>
+                    </div>
+                    <div class="land_info_baseinfoflex">
+                        <div class="land_info_baseinfoflexl">土地描述</div>
+                        <div class="land_info_baseinfoflexr">
+                            该地块位于赵店乡境内，距县城较近，水泥路直通地边，地块内已打井，用电方便。地块为平整性规则沙土地，地已耕好，土质肥厚，适合各种农作物生长，可种植传统农作物，也可开发为采摘区。
+                        </div>
+                    </div>
+                    <div class="land_info_baseinfoflex">
+                        <div class="land_info_baseinfoflexl">地图标注</div>
+                        <div class="land_info_baseinfoflexr">
+                            <img src="images/map.jpg"  alt="">
+                        </div>
+                    </div>
+                </div>
+                <!-- 详细信息 --><!-- hidden -->
+                <div class="land_info_more landInfo hidden tudi">
+                    <!-- 没有详细信息 -->
+                    <!-- <div class="noInfo">
+                        <div class="notRelased">
+                            <div class="notRelasedImg">
+                                <img src="images/noDraft.png" alt="">
+                                <p>该地块还没有完善详细信息呦~~</p>
+                            </div>
+                            <div class="notRelasedButton">
+                                <a href="" title="">去完善</a>
+                            </div>
+                        </div>
+                    </div> -->
+                    <!-- 有详细信息 -->
+                    <ol class="land_info_four_continer">
+                        <li>
+                            <div class="landCertificate" style="margin-top:0">
+                                <h4 class="land_infoTitle">权证情况</h4>
+                                <div class="clearfix land_infoBorderbottom">
+                                    <div class="fl">权证类型</div>
+                                    <div class="fr">农村土地承包经营权证</div>
+                                </div>
+                                <div class="clearfix land_infoBorderbottom">
+                                    <div class="fl">权属类型</div>
+                                    <div class="fr">个人</div>
+                                </div>
+                            </div>
+                            <div class="landCertificate">
+                                <h4 class="land_infoTitle">交通</h4>
+                                <div class="clearfix land_infoBorderbottom">
+                                    <div class="fl">高速</div>
+                                    <div class="fr">50-100km</div>
+                                </div>
+                                <div class="clearfix land_infoBorderbottom">
+                                    <div class="fl">港口</div>
+                                    <div class="fr">600-1000km</div>
+                                </div>
+                                <div class="clearfix land_infoBorderbottom">
+                                    <div class="fl">国道</div>
+                                    <div class="fr">50-100km</div>
+                                </div>
+                                <div class="clearfix land_infoBorderbottom">
+                                    <div class="fl">铁路</div>
+                                    <div class="fr">600-1000km</div>
+                                </div>
+                                <div class="clearfix land_infoBorderbottom">
+                                    <div class="fl">高铁</div>
+                                    <div class="fr">50-100km</div>
+                                </div>
+                                <div class="clearfix land_infoBorderbottom">
+                                    <div class="fl">机场</div>
+                                    <div class="fr">600-1000km</div>
+                                </div>
+                            </div>
+                            <div class="landCertificate">
+                                <h4 class="land_infoTitle">配套设施</h4>
+                                <div class="clearfix land_infoBorderbottom">
+                                    <div class="fl">进入道路</div>
+                                    <div class="fr">水泥路</div>
+                                </div>
+                                <div class="clearfix land_infoBorderbottom">
+                                    <div class="fl">机械化程度</div>
+                                    <div class="fr">基本机械化</div>
+                                </div>
+                                <div class="clearfix land_infoBorderbottom">
+                                    <div class="fl">排水条件</div>
+                                    <div class="fr">充分满足</div>
+                                </div>
+                                <div class="clearfix land_infoBorderbottom">
+                                    <div class="fl">灌溉条件</div>
+                                    <div class="fr">无灌溉条件</div>
+                                </div>
+                                <div class="clearfix land_infoBorderbottom">
+                                    <div class="fl">相关设施</div>
+                                    <div class="fr">冷藏保鲜、农科站、生活用房</div>
+                                </div>
+                                <div class="clearfix land_infoBorderbottom">
+                                    <div class="fl">附属设施</div>
+                                    <div class="fr">给水、通天然气或煤气、通讯</div>
+                                </div>
+                            </div>
+                            <div class="landCertificate">
+                                <h4 class="land_infoTitle">地块情况</h4>
+                                <div class="clearfix land_infoBorderbottom">
+                                    <div class="fl">地块地形</div>
+                                    <div class="fr">不规则</div>
+                                </div>
+                                <div class="clearfix land_infoBorderbottom">
+                                    <div class="fl">土壤肥力</div>
+                                    <div class="fr">较高</div>
+                                </div>
+                                <div class="clearfix land_infoBorderbottom">
+                                    <div class="fl">土壤质地</div>
+                                    <div class="fr">砂砾土</div>
+                                </div>
+                                <div class="clearfix land_infoBorderbottom">
+                                    <div class="fl">平整程度</div>
+                                    <div class="fr">非常平整</div>
+                                </div>
+                                <div class="clearfix land_infoBorderbottom">
+                                    <div class="fl">有效土壤厚度</div>
+                                    <div class="fr">50-100cm</div>
+                                </div>
+                            </div>
+                            <div class="landCertificate">
+                                <h4 class="land_infoTitle">水电网情况</h4>
+                                <div class="clearfix land_infoBorderbottom">
+                                    <div class="fl">网络</div>
+                                    <div class="fr">暂未接通</div>
+                                </div>
+                                <div class="clearfix land_infoBorderbottom">
+                                    <div class="fl">供电</div>
+                                    <div class="fr">已有接通电源的电线或电缆</div>
+                                </div>
+                                <div class="clearfix land_infoBorderbottom">
+                                    <div class="fl">供水</div>
+                                    <div class="fr">有管道，未安装供水设施</div>
+                                </div>
+                                <div class="clearfix land_infoBorderbottom">
+                                    <div class="fl">供气</div>
+                                    <div class="fr">有管道，未安装</div>
+                                </div>
+                            </div>
+                            <div class="landCertificate">
+                                <h4 class="land_infoTitle">经营状况</h4>
+                                <div class="clearfix land_infoBorderbottom">
+                                    <div class="fl">地块利用现状</div>
+                                    <div class="fr">种植</div>
+                                </div>
+                                <div class="clearfix land_infoBorderbottom">
+                                    <div class="fl">当地劳动资源</div>
+                                    <div class="fr">充裕</div>
+                                </div>
+                                <div class="clearfix land_infoBorderbottom">
+                                    <div class="fl">当地农民主要收入来源</div>
+                                    <div class="fr">在家种养</div>
+                                </div>
+                                <div class="clearfix land_infoBorderbottom">
+                                    <div class="fl">当地农民人均年收入</div>
+                                    <div class="fr">6000-10000</div>
+                                </div>
+                                <div class="clearfix land_infoBorderbottom">
+                                    <div class="fl">地块适合何种经营</div>
+                                    <div class="fr">种植作物</div>
+                                </div>
+                            </div>
+                            <div class="landCertificate">
+                                <h4 class="land_infoTitle">补贴政策</h4>
+                                <div class="clearfix land_infoBorderbottom">
+                                    <div class="fl">补贴</div>
+                                    <div class="fr hasBorder">
+                                        <span>农机报废补贴</span>
+                                        <span>农机购置补贴</span>
+                                        <span>农机报废更新补贴</span>
+                                        <span>种粮直补</span>
+                                    </div>
+                                </div>
+                                <div class="clearfix land_infoBorderbottom">
+                                    <div class="fl">政策</div>
+                                    <div class="fr hasBorder">
+                                        <span>扶持政策</span>
+                                        <span>税收政策</span>
+                                        <span>最低收购价政策</span>
+                                        <span>畜牧业扶植政策</span>
+                                        <span>畜牧业扶植政策</span>
+                                        <span>贷款利息优惠</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+                <div class="forYouSuggest">
+                    <h2>为您推荐</h2>
+                </div>
+                <ul class="lands_listCon clearfix lands_listCon1">
+                    <li>
+                        <a href="#" title="">
+                            <dl>
+                                <dt>
+                                    <img src="images/lindi.png" alt="" class="full">
+                                    <b>￥ 5564万</b>
+                                </dt>
+                                <dd>
+                                    <div class="title">天津市宝坻区牛道口镇李家</div>
+                                    <div class="sorts">
+                                        <span>多种种植</span>
+                                        <span>种植</span>
+                                        <span>农场</span>
+                                    </div>
+                                    <div class="area_limit clearfix">
+                                        <div class="fl map">
+                                            <img src="images/icon_bg_location_rest.png" alt="" class="fl">
+                                            <span class="fl">安徽省/合肥/长丰县</span>
+                                        </div>
+                                        <div class="fr bold">15年</div>
+                                    </div>
+                                </dd>
+                            </dl>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="">
+                            <dl>
+                                <dt>
+                                    <img src="images/zhanweitu.jpg" alt="" class="full">
+                                    <b>￥ 56067万</b>
+                                </dt>
+                                <dd>
+                                    <div class="title">天津市宝坻区津市宝</div>
+                                    <div class="sorts">
+                                        <span>多种种植</span>
+                                        <span>种植种植</span>
+                                        <span>农场</span>
+                                    </div>
+                                    <div class="area_limit clearfix">
+                                        <div class="fl map">
+                                            <img src="images/icon_bg_location_rest.png" alt="" class="fl">
+                                            <span class="fl">安徽省/合肥/好长县</span>
+                                        </div>
+                                        <div class="fr bold">15年</div>
+                                    </div>
+                                </dd>
+                            </dl>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="land_buttonBar flexbox">
+        <div class="land_buttonBarl">
+        <!-- <img src="images/icon_tab_collect_selected.png" alt=""> -->
+            <img src="images/icon_tab_collect_rest.png" alt=""><br/>收藏
+        </div>
+        <div class="land_buttonBarr clearfix flex1">
+            <a title="" id="seeLand">我要看地</a>
+            <a title="" id="consultLand">我要咨询</a>
+        </div>
+    </div>
+</div>
+
+
+<script type="text/javascript" src="js/swiper.min.js"></script>
+<script type="text/javascript" src="js/iscroll4.js"></script>
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<!-- Initialize Swiper -->
+<script>
+(function($){
+    // 土地信息banner焦点图
+    var swiper = new Swiper('#focusImage', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        // spaceBetween: 300,
+        centeredSlides: true,
+        autoplay: 3500,
+        autoplayDisableOnInteraction: false
+    });
+    //土地信息切换
+        $(".land_info_bar a").click(function(event) {
+            var index = $(this).index();
+            $(this).addClass("on").siblings().removeClass("on");
+            $(".tudi").eq(index).show().siblings().hide();
+        });
+
+
+})(jQuery)
+
+</script>
+</body>
+
+</html>

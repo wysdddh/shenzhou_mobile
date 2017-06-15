@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <title>神州土地手机版-搜索页</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta charset="utf-8">
+    <meta name="applicable-device" content="mobile">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="favicon.ico">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="format-detection" content="telephone=no, email=no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <link rel="stylesheet" type="text/css" href="style/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="style/reset.css">
+    <!-- <link href="style/normalize.css" rel="stylesheet"> -->
+    <link href="style/main.css" rel="stylesheet">
+    <script type="text/javascript">
+        (function(doc, win) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function() {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    if (clientWidth >= 750) {
+                        docEl.style.fontSize = '100px';
+                    } else {
+                        docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+                    }
+                };
+
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window);
+    </script>
+</head>
+
+<body>
+<div class="wrapper searchwrapper">
+    <header class="search_header flexbox clearfix">
+        <div class="header_logo_close">
+            <a href="#" title="">
+                <img src="images/icon_close.png">
+            </a>
+        </div>
+        <div class="search_bar flex1">
+            <form action="">
+                <input type="search" name="" value="" placeholder="从这里搜索土地">
+                <img src="images/icon_search.png" alt="">
+            </form>
+        </div>
+        <div class="login">
+            <a href="" title="" class="color_blue">搜索</a>
+        </div>
+    </header>
+    <div class="search_page">
+        <div class="latest_search">
+            <div class="latest_search_header clearfix">
+                <div class="latest_search_headerl fl">
+                    最近搜索
+                </div>
+                <div class="latest_search_headerr fr">
+                    <img src="images/icon_delete.png" alt="">
+                </div>
+            </div>
+            <div class="latest_search_list clearfix">
+                <a href="" title="">河北省石家庄水浇地</a>
+                <a href="" title="">林地</a>
+                <a href="" title="">荒地</a>
+                <a href="" title="">鱼塘</a>
+                <a href="" title="">商服用地</a>
+            </div>
+        </div>
+        <div class="latest_search">
+            <div class="latest_search_header clearfix">
+                <div class="latest_search_headerl fl">
+                    热门搜索
+                </div>
+                <div class="latest_search_headerr fr">
+                    <img src="images/icon_refesh.png" alt="" style="height: 0.3rem">
+                </div>
+            </div>
+            <div class="latest_search_list clearfix">
+                <a href="" title="">水浇地</a>
+                <a href="" title="">林地</a>
+                <a href="" title="">旱地</a>
+                <a href="" title="">商服用地</a>
+                <a href="" title="">荒地</a>
+                <a href="" title="">鱼塘</a>
+            </div>
+        </div>
+    </div>
+    <footer class="main_footer flexbox main_footerfixed">
+        <a href="tudi66.html" title="" class="flex1">
+            <img src="images/icon_shouye.png" alt="">
+            <br/>首页
+        </a>
+        <a href="news.html" title="" class="flex1">
+            <img src="images/icon_zixun.png" alt="">
+            <br/>资讯
+        </a>
+        <a href="" title="" class="flex1">
+            <img src="images/icon_fabu.png" alt="">
+            <br/>发布土地
+        </a>
+        <a href="landTransfer.html" title="" class="flex1">
+            <img src="images/icon_liuzhan.png" alt="">
+            <br/>土地流转
+        </a>
+        <a href="my.html" title="" class="flex1">
+            <img src="images/icon_wode.png" alt="">
+            <br/>我的
+        </a>
+    </footer>
+</div>
+
+
+</body>
+
+</html>

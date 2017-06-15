@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <title>神州土地手机版-委托找地</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta charset="utf-8">
+    <meta name="applicable-device" content="mobile">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="favicon.ico">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="format-detection" content="telephone=no, email=no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <link rel="stylesheet" type="text/css" href="style/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="style/reset.css">
+    <!-- <link href="style/normalize.css" rel="stylesheet"> -->
+    <link href="style/main.css" rel="stylesheet">
+    <script type="text/javascript">
+    (function(doc, win) {
+        var docEl = doc.documentElement,
+            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+            recalc = function() {
+                var clientWidth = docEl.clientWidth;
+                if (!clientWidth) return;
+                if (clientWidth >= 750) {
+                    docEl.style.fontSize = '100px';
+                } else {
+                    docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+                }
+            };
+
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+    </script>
+    <script type="text/javascript">
+    // var UA = navigator.userAgent;
+    // if (UA.match(/Android/i) || (UA.indexOf('iPhone') != -1) || (UA.indexOf('iPod') != -1)) {
+    //     window.location = 'http://m.tudi66.com/';
+    // }
+    // var ua = navigator.userAgent.toLowerCase();
+    // if (/iphone|ipad|ipod/.test(ua)) {
+    // alert("iphone");
+    // } else if (/android/.test(ua)) {
+    // alert("android");
+    // }
+    </script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="main_page" style="background: #fff">
+            <header class="common_header flexbox clearfix">
+                <div class="back_rest">
+                    <a href="#" title="">
+                        <img src="images/icon_btn_back_rest.png" alt="" class="full">
+                    </a>
+                </div>
+                <h1 class="flex1">委托找地</h1>
+                <div class="more_rest_button">
+                    <a href="" title="">
+                        <img src="images/icon_tab_more_rest.png" alt="" class="full">
+                    </a>
+                </div>
+            </header>
+            <div class="main_page">
+                <form action="">
+                    <div>
+                        <ul class="landAread margintop20 clearfix">
+                            <li class="hasBorderBottom">
+                                <a href="javascript:;" title="" class="landAreadAll">
+                                    <div class="landAreadl">土地面积</div>
+                                    <div class="landAreadr clearfix">
+                                        <input type="text" name="" value="" placeholder="选择土地面积" required="required">
+                                        <span class="mu">亩</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="hasBorderBottom">
+                                <a href="javascript:;" title="" class="landAreadAll">
+                                    <div class="landAreadl">所在区域<span>(可选)</span></div>
+                                    <div class="landAreadr clearfix">
+                                        <input type="text" name="" value="" placeholder="确认标注" required="required">
+                                        <img src="images/icon_tab_arrows_rest.png" alt="" class="icon_arrow">
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="landAread margintop20 clearfix">
+                            <li class="hasBorderBottom">
+                                <a href="javascript:;" title="" class="landAreadAll">
+                                    <div class="landAreadl">流转价格</div>
+                                    <div class="landAreadr clearfix">
+                                        <input type="text" name="" value="" placeholder="请输入流转价格" required="required">
+                                        <span class="mu">元</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="hasBorderBottom">
+                                <a href="javascript:;" title="" class="landAreadAll">
+                                    <div class="landAreadl">流转用途<span>(可选)</span></div>
+                                    <div class="landAreadr clearfix">
+                                        <input type="text" name="" value="" placeholder="请选择流转用途" required="required">
+                                        <img src="images/icon_tab_arrows_rest.png" alt="" class="icon_arrow">
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="hasBorderBottom" style="height:auto;padding:0">
+                            <li class="hasBorderBottom" style="height:auto">
+                                <a href="javascript:;" title="" class="landAreadAll">
+                                    <div class="landAreadl">详细描述<span>(可选)</span></div>
+                                    <div class="landAreadr clearfix">
+                                        <textarea name=""></textarea>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="margintop20 clearfix linkmanWrap">
+                            <li class="flexbox">
+                                <div class="linkman">联系人</div>
+                                <div class="linkmanInput clearfix flex1">
+                                    <input type="text" name="" value="" placeholder="请输入联系人姓名" required="required">
+                                </div>
+                            </li>
+                            <li class="flexbox">
+                                <div class="linkman">手机号码</div>
+                                <div class="linkmanInput clearfix flex1">
+                                    <input type="text" name="" value="" placeholder="请输入手机号码" required="required">
+                                </div>
+                            </li>
+                            <li class="flexbox">
+                                <div class="linkman">图形码</div>
+                                <div class="linkmanInput clearfix flex1">
+                                    <input type="text" name="" value="" placeholder="请输入图片验证码" required="required">
+                                    <a href="" title="" class="getImgCode">
+                                        <img src="images/txyzm.jpg" alt="图形验证码">
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="flexbox">
+                                <div class="linkman">短信验证码</div>
+                                <div class="linkmanInput clearfix flex1">
+                                    <input type="text" name="" value="" placeholder="请输入短信验证码" required="required">
+                                    <a href="" title="" class="getMessageCode">点击获取</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="buttonBar">
+                        <div class="buttonBarr">
+                            <input type="button" name="" value="提交">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

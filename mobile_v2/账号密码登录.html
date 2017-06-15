@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <title>神州土地手机版</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta charset="utf-8">
+    <meta name="applicable-device" content="mobile">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="favicon.ico">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="format-detection" content="telephone=no, email=no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <link rel="stylesheet" type="text/css" href="style/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="style/reset.css">
+    <!-- <link href="style/normalize.css" rel="stylesheet"> -->
+    <link href="style/main.css" rel="stylesheet">
+    <script type="text/javascript">
+        (function(doc, win) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function() {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    if (clientWidth >= 750) {
+                        docEl.style.fontSize = '100px';
+                    } else {
+                        docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+                    }
+                };
+
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window);
+    </script>
+    <script type="text/javascript">
+        // var UA = navigator.userAgent;
+        // if (UA.match(/Android/i) || (UA.indexOf('iPhone') != -1) || (UA.indexOf('iPod') != -1)) {
+        //     window.location = 'http://m.tudi66.com/';
+        // }
+        // var ua = navigator.userAgent.toLowerCase();
+        // if (/iphone|ipad|ipod/.test(ua)) {
+        // alert("iphone");
+        // } else if (/android/.test(ua)) {
+        // alert("android");
+        // }
+    </script>
+</head>
+
+<body>
+<div class="wrapper">
+    <div class="main_page" style="background: #fff;padding-bottom: 0">
+        <header class="common_header flexbox clearfix">
+            <div class="back_rest">
+                <a href="#" title="">
+                    <img src="images/icon_btn_back_rest.png" alt="" class="full">
+                </a>
+            </div>
+            <h1 class="flex1 textRight"><a href="" title="">注册</a></h1>
+        </header>
+        <div class="appointLogo">
+            <img src="images/big_logo.png" alt="">
+        </div>
+        <div class="appointContent">
+            <form action="">
+                <ul class="landAread clearfix">
+                    <li class="flexbox">
+                        <div class="landAreadl">账号</div>
+                        <div class="landAreadr clearfix clear_text_wrap">
+                            <input type="text" name="" value="" placeholder="手机号已验证" required="required" id="clear_text_input">
+                            <a href="javascript:;" class="clear_text" onclick="clearvalue(this)"></a>
+                        </div>
+                    </li>
+                    <li class="flexbox">
+                        <div class="landAreadl">密码</div>
+                        <div class="landAreadr clearfix clear_text_wrap">
+                            <input type="password" name="" value="" placeholder="请输入密码" required="required">
+                            <a href="javascript:;" title="" class="showOrHidepwd" onclick="passwordshow(this);"></a>
+                        </div>
+                    </li>
+                    <li class="flexbox">
+                        <div class="landAreadl">图形码</div>
+                        <div class="landAreadr clearfix">
+                            <input type="text" name="" value="" placeholder="请输入图片验证码" required="required">
+                            <a href="" title="" class="getImgCode">
+                                <img src="images/txyzm.jpg" alt="图形验证码">
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+                <div class="protocol_login clearfix" style="margin-bottom:0.62rem">
+                    <div class="freeLogin fl">
+                        <input type="checkbox" name="" value="" id="checkbox">
+                        <label for="checkbox">记住我</label>
+                    </div>
+                    <div class="fr loginType">
+                        <a href="">短信验证码登录</a>
+                    </div>
+                </div>
+                <div class="forgetPwd">
+                    <a href="">忘记密码？</a>
+                </div>
+                <div class="button_surer">
+                    <a href="">确定</a>
+                </div>
+                <div class="otherLogin">
+                    <div class="other_header">
+                        <div class="other_header_text">其他登录方式</div>
+                    </div>
+                    <div class="threeWayLogin clearfix">
+                        <a href="" title="">
+                            <img src="images/login_qq.png" alt=""><br>QQ
+                        </a>
+                        <a href="" title="">
+                            <img src="images/login_wb.png" alt=""><br>微博
+                        </a>
+                        <a href="" title="">
+                            <img src="images/login_wx.png" alt=""><br>微信
+                        </a>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript">
+    //清空重写
+    function clearvalue(ths){ $(ths).parent().find('input').val(''); }
+    //密码显示
+    function passwordshow(ths){ $(ths).parent().find('input').attr('type','text');$(ths).hide(); }
+
+</script>
+</body>
+
+</html>

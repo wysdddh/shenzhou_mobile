@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <title>神州土地手机版-发布土地</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta charset="utf-8">
+    <meta name="applicable-device" content="mobile">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="favicon.ico">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="format-detection" content="telephone=no, email=no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <link rel="stylesheet" type="text/css" href="style/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="style/reset.css">
+    <!-- <link href="style/normalize.css" rel="stylesheet"> -->
+    <link href="style/main.css" rel="stylesheet">
+    <script type="text/javascript">
+    (function(doc, win) {
+        var docEl = doc.documentElement,
+            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+            recalc = function() {
+                var clientWidth = docEl.clientWidth;
+                if (!clientWidth) return;
+                if (clientWidth >= 750) {
+                    docEl.style.fontSize = '100px';
+                } else {
+                    docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+                }
+            };
+
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+    </script>
+    <script type="text/javascript">
+    // var UA = navigator.userAgent;
+    // if (UA.match(/Android/i) || (UA.indexOf('iPhone') != -1) || (UA.indexOf('iPod') != -1)) {
+    //     window.location = 'http://m.tudi66.com/';
+    // }
+    // var ua = navigator.userAgent.toLowerCase();
+    // if (/iphone|ipad|ipod/.test(ua)) {
+    // alert("iphone");
+    // } else if (/android/.test(ua)) {
+    // alert("android");
+    // }
+    </script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="main_page" style="background: #fff">
+            <header class="common_header flexbox clearfix">
+                <div class="back_rest">
+                    <a href="首页.html" title="">
+                        <img src="images/icon_btn_back_rest.png" alt="" class="full">
+                    </a>
+                </div>
+                <h1 class="flex1">发布土地</h1>
+                <div class="more_rest_button">
+                    <a href="" title="">
+                        <img src="images/icon_tab_more_rest.png" alt="" class="full">
+                    </a>
+                </div>
+            </header>
+            <div class="main_page">
+                <form action="">
+                    <div class="uploadPicaAreaTop">
+                        <div class="uploadPicaArea">
+                            <!-- <section class="z_file fl">
+                                <img src="img/a11.png" class="add-img">
+                                <input type="file" name="file" id="file" class="file" value="" accept="image/jpg,image/jpeg,image/png,image/bmp" multiple />
+                            </section> -->
+                            <div class="uploadCamera">
+                                <input type="file" name="file" id="file" class="file" value="" accept="image/jpg,image/jpeg,image/png,image/bmp" multiple />
+                            </div>
+                            <div class="uploadTitle">
+                                上传图片
+                            </div>
+                        </div>
+                        <div class="uploadImgList clearfix">
+                            <!--<section class="up-section fl">
+                                    <span class="up-span"></span>
+                                    <img src="/img/buyerCenter/a7.png" class="close-upimg">
+                                    <img src="/img/buyerCenter/3c.png" class="type-upimg" alt="添加标签">
+                                    <img src="/img/test2.jpg" class="up-img">
+                                    <p class="img-namep"></p>
+                                    <input id="taglocation" name="taglocation" value="" type="hidden">
+                                    <input id="tags" name="tags" value="" type="hidden">
+                                </section>-->
+
+                            <!-- <li>
+                                <input type="file" name="" value="">
+                                <img src="images/land.jpg" alt="">
+                                <img src="images/img_close.png" alt="" class="img_close">
+                            </li> -->
+                        </div>
+                    </div>
+                    <div class="landInfoList">
+                        <div>
+                            <ul class="landAread margintop20 clearfix">
+                                <li class="hasBorderBottom">
+                                    <a href="javascript:;" title="" class="landAreadAll">
+                                        <div class="landAreadl">所在区域</div>
+                                        <div class="landAreadr clearfix">
+                                            <input type="text" name="" value="" placeholder="请选择区域" required="required">
+                                            <img src="images/icon_tab_arrows_rest.png" alt="" class="icon_arrow">
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="hasBorderBottom">
+                                    <a href="javascript:;" title="" class="landAreadAll">
+                                        <div class="landAreadl">地理位置</div>
+                                        <div class="landAreadr clearfix">
+                                            <input type="text" name="" value="" placeholder="地图标注" required="required">
+                                            <img src="images/icon_tab_arrows_rest.png" alt="" class="icon_arrow">
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="hasBorderBottom">
+                                    <a href="javascript:;" title="" class="landAreadAll noborder">
+                                        <div class="landAreadl">详细位置</div>
+                                        <div class="landAreadr clearfix">
+                                            <input type="text" name="" value="" placeholder="请填写详细位置" required="required">
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="landAread margintop20 clearfix">
+                                <li class="hasBorderBottom">
+                                    <a href="javascript:;" title="" class="landAreadAll">
+                                        <div class="landAreadl">土地类型</div>
+                                        <div class="landAreadr clearfix">
+                                            <input type="text" name="" value="" placeholder="选择土地类型" required="required">
+                                            <img src="images/icon_tab_arrows_rest.png" alt="" class="icon_arrow">
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="hasBorderBottom">
+                                    <a href="javascript:;" title="" class="landAreadAll noborder">
+                                        <div class="landAreadl">土地面积</div>
+                                        <div class="landAreadr clearfix">
+                                            <input type="number" name="" value="" placeholder="仅限数字，0为面议" required="required">
+                                            <span class="mu" style="right: 0.25rem">亩</span>
+                                            <img src="images/icon_tab_arrows_rest.png" alt="" class="icon_arrow">
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="landAread margintop20 clearfix">
+                                <li class="hasBorderBottom">
+                                    <a href="javascript:;" title="" class="landAreadAll">
+                                        <div class="landAreadl">流转年限</div>
+                                        <div class="landAreadr clearfix">
+                                            <input type="number" name="" value="" placeholder="大于0的数字" required="required">
+                                            <span class="mu">年</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="hasBorderBottom">
+                                    <a href="javascript:;" title="" class="landAreadAll">
+                                        <div class="landAreadl">流转次数</div>
+                                        <div class="landAreadr clearfix">
+                                            <input type="text" name="" value="" placeholder="选择流转次数" required="required">
+                                            <img src="images/icon_tab_arrows_rest.png" alt="" class="icon_arrow">
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="hasBorderBottom">
+                                    <a href="javascript:;" title="" class="landAreadAll">
+                                        <div class="landAreadl">流转用途</div>
+                                        <div class="landAreadr clearfix">
+                                            <input type="text" name="" value="" placeholder="选择流转用途" required="required">
+                                            <img src="images/icon_tab_arrows_rest.png" alt="" class="icon_arrow">
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="hasBorderBottom">
+                                    <a href="javascript:;" title="" class="landAreadAll">
+                                        <div class="landAreadl">流转类型</div>
+                                        <div class="landAreadr clearfix">
+                                            <input type="text" name="" value="" placeholder="请输入流转类型" required="required">
+                                            <img src="images/icon_tab_arrows_rest.png" alt="" class="icon_arrow">
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="hasBorderBottom">
+                                    <a href="javascript:;" title="" class="landAreadAll">
+                                        <div class="landAreadl">流转价格</div>
+                                        <div class="landAreadr clearfix">
+                                            <input type="text" name="" value="" placeholder="请输入流转价格" required="required">
+                                            <span class="mu">元/亩/年</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="hasBorderBottom">
+                                    <a href="javascript:;" title="" class="landAreadAll noborder">
+                                        <div class="landAreadl">付款方式</div>
+                                        <div class="landAreadr clearfix">
+                                            <input type="text" name="" value="" placeholder="请选择付款方式" required="required">
+                                            <img src="images/icon_tab_arrows_rest.png" alt="" class="icon_arrow">
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="hasBorderBottom margintop20 clearfix" style="height:auto;padding:0">
+                                <li class="hasBorderBottom" style="height:auto">
+                                    <a href="javascript:;" title="" class="landAreadAll noborder">
+                                        <div class="landAreadl">详细描述</div>
+                                        <div class="landAreadr clearfix">
+                                            <textarea name="" placeholder="请填写土地详细描述"></textarea>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="margintop20 clearfix linkmanWrap">
+                                <li class="flexbox">
+                                    <div class="linkman">联系人</div>
+                                    <div class="linkmanInput clearfix flex1">
+                                        <input type="text" name="" value="" placeholder="请输入联系人姓名" required="required">
+                                    </div>
+                                </li>
+                                <li class="flexbox">
+                                    <div class="linkman">手机号码</div>
+                                    <div class="linkmanInput clearfix flex1">
+                                        <input type="number" name="" value="" placeholder="请输入手机号码" required="required">
+                                    </div>
+                                </li>
+                                <li class="flexbox">
+                                    <div class="linkman">图形码</div>
+                                    <div class="linkmanInput clearfix flex1">
+                                        <input type="text" name="" value="" placeholder="请输入验证字符" required="required">
+                                        <a href="" title="" class="getImgCode">
+                                            <img src="images/txyzm.jpg" alt="图形验证码">
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="flexbox noborder">
+                                    <div class="linkman">短信验证码</div>
+                                    <div class="linkmanInput clearfix flex1">
+                                        <input type="number" name="" value="" placeholder="请输入短信验证码" required="required">
+                                        <a href="" title="" class="getMessageCode">点击获取</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="buttonBar">
+                            <div class="buttonBarl">
+                                <input type="reset" value="重置">
+                            </div>
+                            <div class="buttonBarr">
+                                <input type="button" name="" value="提交">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- <script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script> -->
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript">
+        // 图片上传
+        $(function(){
+            var delParent;
+            var defaults = {
+                fileType         : ["jpg","png","bmp","jpeg"],   // 上传文件的类型
+                fileSize         : 1024 * 1024 * 10                  // 上传文件的大小 10M
+            };
+            /*点击图片的文本框*/
+            $(".file").change(function(){
+                var idFile = $(this).attr("id");
+                var file = document.getElementById(idFile);
+                var imgContainer = $(".uploadImgList"); //存放图片的父亲元素
+                var fileList = file.files; //获取的图片文件
+                //console.log(fileList+"======filelist=====");
+                var input = $(this).parent();//文本框的父亲元素
+                var imgArr = [];
+                //遍历得到的图片文件
+                var numUp = imgContainer.find(".up-section").length;
+                var totalNum = numUp + fileList.length;  //总的数量
+                if(fileList.length > 10 || totalNum > 10 ){
+                    alert("上传图片数目不可以超过10个，请重新选择");  //一次选择上传超过5个 或者是已经上传和这次上传的到的总数也不可以超过10个
+                }
+                else if(numUp < 10){
+                    fileList = validateUp(fileList);
+                    for(var i = 0;i<fileList.length;i++){
+                     var imgUrl = window.URL.createObjectURL(fileList[i]);
+                         imgArr.push(imgUrl);
+                     var $section = $("<section class='up-section fl loading'>");
+                         imgContainer.prepend($section);
+                     // var $span = $("<span class='up-span'>");
+                     //     $span.appendTo($section);
+
+                     var $img0 = $("<img class='close-upimg'>").on("click",function(event){
+                            event.preventDefault();
+                            event.stopPropagation();
+                            delParent = $(this).parent();
+                            delParent.remove();
+                        });
+                        $img0.attr("src","images/a7.png").appendTo($section);
+                     var $img = $("<img class='up-img up-opcity'>");
+                         $img.attr("src",imgArr[i]);
+                         $img.appendTo($section);
+                     var $p = $("<p class='img-name-p'>");
+                         $p.html(fileList[i].name).appendTo($section);
+                     var $input = $("<input id='taglocation' name='taglocation' value='' type='hidden'>");
+                         $input.appendTo($section);
+                     var $input2 = $("<input id='tags' name='tags' value='' type='hidden'/>");
+                         $input2.appendTo($section);
+
+                   }
+                }
+                setTimeout(function(){
+                     $(".up-section").removeClass("loading");
+                     $(".up-img").removeClass("up-opcity");
+                 },450);
+                 numUp = imgContainer.find(".up-section").length;
+                if(numUp >= 10){
+                    //$(this).parent().hide();
+                    alert("上传图片数目不可以超过10个，请重新选择");
+                }
+
+                //input内容清空
+                //$(this).val("");
+            });
+
+            $(".uploadImgList").delegate(".close-upimg","click",function(){
+                  delParent = $(this).parent();
+                  delParent.remove();
+            });
+
+                function validateUp(files){
+                    var arrFiles = [];//替换的文件数组
+                    for(var i = 0, file; file = files[i]; i++){
+                        //获取文件上传的后缀名
+                        var newStr = file.name.split("").reverse().join("");
+                        if(newStr.split(".")[0] != null){
+                                var type = newStr.split(".")[0].split("").reverse().join("");
+                                //console.log(type+"===type===");
+                                if(jQuery.inArray(type, defaults.fileType) > -1){
+                                    // 类型符合，可以上传
+                                    if (file.size >= defaults.fileSize) {
+                                        alert(file.size);
+                                        alert('您这个"'+ file.name +'"文件大小过大');
+                                    } else {
+                                        // 在这里需要判断当前所有文件中
+                                        arrFiles.push(file);
+                                    }
+                                }else{
+                                    alert('您这个"'+ file.name +'"上传类型不符合');
+                                }
+                            }else{
+                                alert('您这个"'+ file.name +'"没有类型, 无法识别');
+                            }
+                    }
+                    return arrFiles;
+                }
+
+        })
+
+    </script>
+</body>
+
+</html>

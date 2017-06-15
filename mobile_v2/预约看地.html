@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <title>神州土地手机版-预约看地</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta charset="utf-8">
+    <meta name="applicable-device" content="mobile">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="favicon.ico">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="format-detection" content="telephone=no, email=no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <link rel="stylesheet" type="text/css" href="style/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="style/reset.css">
+    <!-- <link href="style/normalize.css" rel="stylesheet"> -->
+    <link href="style/main.css" rel="stylesheet">
+    <script type="text/javascript">
+        (function(doc, win) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function() {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    if (clientWidth >= 750) {
+                        docEl.style.fontSize = '100px';
+                    } else {
+                        docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+                    }
+                };
+
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window);
+    </script>
+    <script type="text/javascript">
+        // var UA = navigator.userAgent;
+        // if (UA.match(/Android/i) || (UA.indexOf('iPhone') != -1) || (UA.indexOf('iPod') != -1)) {
+        //     window.location = 'http://m.tudi66.com/';
+        // }
+        // var ua = navigator.userAgent.toLowerCase();
+        // if (/iphone|ipad|ipod/.test(ua)) {
+        // alert("iphone");
+        // } else if (/android/.test(ua)) {
+        // alert("android");
+        // }
+    </script>
+</head>
+
+<body>
+<div class="wrapper">
+    <div class="main_page" style="background: #fff">
+        <header class="common_header flexbox clearfix">
+            <div class="back_rest">
+                <a href="#" title="">
+                    <img src="images/icon_btn_back_rest.png" alt="" class="full">
+                </a>
+            </div>
+            <h1 class="flex1">预约看地</h1>
+        </header>
+        <div class="appointLogo">
+            <img src="images/big_logo.png" alt="">
+        </div>
+        <div class="appointContent">
+            <form action="">
+                <ul class="landAread clearfix">
+                    <li class="flexbox">
+                        <div class="landAreadl">联系人</div>
+                        <div class="landAreadr clearfix">
+                            <input type="text" name="" value="" placeholder="请输入联系人姓名" required="required">
+                        </div>
+                    </li>
+                    <li class="flexbox">
+                        <div class="landAreadl">手机号码</div>
+                        <div class="landAreadr clearfix">
+                            <input type="text" name="" value="" placeholder="请输入手机号码" required="required">
+                        </div>
+                    </li>
+                    <li class="flexbox">
+                        <div class="landAreadl">图形码</div>
+                        <div class="landAreadr clearfix">
+                            <input type="text" name="" value="" placeholder="请输入图片验证码" required="required">
+                            <a href="" title="" class="getImgCode">
+                                <img src="images/txyzm.jpg" alt="图形验证码">
+                            </a>
+                        </div>
+                    </li>
+                    <li class="flexbox">
+                        <div class="landAreadl">短信验证码</div>
+                        <div class="landAreadr clearfix">
+                            <input type="text" name="" value="" placeholder="请输入短信验证码" required="required">
+                            <a href="" title="" class="getMessageCode getMesCode">点击获取</a>
+                        </div>
+                    </li>
+                </ul>
+                <div class="button_sure">
+                    <a href="">确定</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>

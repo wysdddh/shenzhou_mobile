@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <title>神州土地手机版-土地列表页</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta charset="utf-8">
+    <meta name="applicable-device" content="mobile">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="favicon.ico">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="format-detection" content="telephone=no, email=no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <link rel="stylesheet" type="text/css" href="style/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="style/reset.css">
+    <!-- <link href="style/normalize.css" rel="stylesheet"> -->
+    <link href="style/main.css" rel="stylesheet">
+    <script type="text/javascript">
+        (function(doc, win) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function() {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    if (clientWidth >= 750) {
+                        docEl.style.fontSize = '100px';
+                    } else {
+                        docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+                    }
+                };
+
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window);
+    </script>
+    <script type="text/javascript">
+        // var UA = navigator.userAgent;
+        // if (UA.match(/Android/i) || (UA.indexOf('iPhone') != -1) || (UA.indexOf('iPod') != -1)) {
+        //     window.location = 'http://m.tudi66.com/';
+        // }
+        // var ua = navigator.userAgent.toLowerCase();
+        // if (/iphone|ipad|ipod/.test(ua)) {
+        // alert("iphone");
+        // } else if (/android/.test(ua)) {
+        // alert("android");
+        // }
+    </script>
+</head>
+
+<body>
+<div class="wrapper">
+    <div class="main_page">
+        <header class="common_header flexbox clearfix">
+            <div class="back_rest">
+                <a href="#" title="">
+                    <img src="images/icon_btn_back_rest.png" alt="" class="full">
+                </a>
+            </div>
+            <h1 class="flex1">土地流转</h1>
+            <div class="more_rest_button">
+                <a href="" title="">
+                    <img src="images/icon_tab_more_rest.png" alt="" class="full">
+                </a>
+            </div>
+        </header>
+        <div class="landTransfer_searchbox">
+            <form action="">
+                <input type="search" name="" value="" placeholder="从这里搜索土地">
+                <img src="images/icon_btn_search_rest.png" alt="" class="search_button">
+            </form>
+        </div>
+        <div class="landTransfer_selectBar">
+            <ul class="flexbox">
+                <li class="flex1">
+                    <a href="" title="" class="on">
+                        土地用途
+                        <span></span>
+                    </a>
+                </li>
+                <li class="flex1">
+                    <a href="" title="">
+                        全部区域
+                        <span></span>
+                    </a>
+                </li>
+                <li class="flex1">
+                    <a href="" title="">
+                        流转类型
+                        <span></span>
+                    </a>
+                </li>
+                <li class="flex1">
+                    <a href="" title="">
+                        筛选
+                        <span></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="latest_lands">
+            <div class="lands_list"><!-- landTransfer_content -->
+                <ul class="lands_listCon clearfix" id ="layoutTarget" style="margin-top: 0.2rem">
+                    <li>
+                        <a href="#" title="">
+                            <dl>
+                                <dt>
+                                    <img src="images/lindi.png" alt="" class="full">
+                                    <b>￥ 5564万</b>
+                                </dt>
+                                <dd>
+                                    <div class="title">天津市宝坻区牛道口镇李家</div>
+                                    <div class="sorts">
+                                        <span>多种种植</span>
+                                        <span>种植</span>
+                                        <span>农场</span>
+                                    </div>
+                                    <div class="area_limit clearfix">
+                                        <div class="fl map">
+                                            <img src="images/icon_bg_location_rest.png" alt="" class="fl">
+                                            <span class="fl">安徽省/合肥/长丰县</span>
+                                        </div>
+                                        <div class="fr bold">15年</div>
+                                    </div>
+                                </dd>
+                            </dl>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="">
+                            <dl>
+                                <dt>
+                                    <img src="images/zhanweitu.jpg" alt="" class="full">
+                                    <b>￥ 56067万</b>
+                                </dt>
+                                <dd>
+                                    <div class="title">天津市宝坻区津市宝</div>
+                                    <div class="sorts">
+                                        <span>多种种植</span>
+                                        <span>种植种植</span>
+                                        <span>农场</span>
+                                    </div>
+                                    <div class="area_limit clearfix">
+                                        <div class="fl map">
+                                            <img src="images/icon_bg_location_rest.png" alt="" class="fl">
+                                            <span class="fl">安徽省/合肥/好长县</span>
+                                        </div>
+                                        <div class="fr bold">15年</div>
+                                    </div>
+                                </dd>
+                            </dl>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="">
+                            <dl>
+                                <dt>
+                                    <img src="images/gengdi.png" alt="" class="full">
+                                    <b>￥ 560万</b>
+                                </dt>
+                                <dd>
+                                    <div class="title">天津市宝坻区牛道口镇李家</div>
+                                    <div class="sorts">
+                                        <span>多种种植</span>
+                                        <span>种植</span>
+                                        <span>农场</span>
+                                    </div>
+                                    <div class="area_limit clearfix">
+                                        <div class="fl map">
+                                            <img src="images/icon_bg_location_rest.png" alt="" class="fl">
+                                            <span class="fl">安徽省/合肥/长丰县</span>
+                                        </div>
+                                        <div class="fr bold">15年</div>
+                                    </div>
+                                </dd>
+                            </dl>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="">
+                            <dl>
+                                <dt>
+                                    <img src="images/land.jpg" alt="" class="full">
+                                    <b>￥ 560万</b>
+                                </dt>
+                                <dd>
+                                    <div class="title">天津市宝坻区牛道口镇李家天津市宝</div>
+                                    <div class="sorts">
+                                        <span>多种种植</span>
+                                        <span>种植种植</span>
+                                        <span>农场</span>
+                                    </div>
+                                    <div class="area_limit clearfix">
+                                        <div class="fl map">
+                                            <img src="images/icon_bg_location_rest.png" alt="" class="fl">
+                                            <span class="fl">安徽省/合肥/好长县</span>
+                                        </div>
+                                        <div class="fr bold">15年</div>
+                                    </div>
+                                </dd>
+                            </dl>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="">
+                            <dl>
+                                <dt>
+                                    <img src="images/land.jpg" alt="" class="full">
+                                    <b>￥ 560万</b>
+                                </dt>
+                                <dd>
+                                    <div class="title">天津市宝坻区牛道口镇李家</div>
+                                    <div class="sorts">
+                                        <span>多种种植</span>
+                                        <span>种植</span>
+                                        <span>农场</span>
+                                    </div>
+                                    <div class="area_limit clearfix">
+                                        <div class="fl map">
+                                            <img src="images/icon_bg_location_rest.png" alt="" class="fl">
+                                            <span class="fl">安徽省/合肥/长丰县</span>
+                                        </div>
+                                        <div class="fr bold">15年</div>
+                                    </div>
+                                </dd>
+                            </dl>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="">
+                            <dl>
+                                <dt>
+                                    <img src="images/land.jpg" alt="" class="full">
+                                    <b>￥ 560万</b>
+                                </dt>
+                                <dd>
+                                    <div class="title">天津市宝坻区牛道口镇李家天津市宝</div>
+                                    <div class="sorts">
+                                        <span>多种种植</span>
+                                        <span>种植种植</span>
+                                        <span>农场</span>
+                                    </div>
+                                    <div class="area_limit clearfix">
+                                        <div class="fl map">
+                                            <img src="images/icon_bg_location_rest.png" alt="" class="fl">
+                                            <span class="fl">安徽省/合肥/好长县</span>
+                                        </div>
+                                        <div class="fr bold">15年</div>
+                                    </div>
+                                </dd>
+                            </dl>
+                        </a>
+                    </li>
+                </ul>
+                <div class="load_more">
+                    <a href="#" title="">上拉继续加载</a>
+                </div>
+                <!-- <div class="no_load_more">
+                    <img src="images/no_more_load1.png" alt=""><br/>没有更多了
+                </div> -->
+            </div>
+        </div>
+
+    </div>
+    <div class="groupButton">
+        <ul>
+            <li id="layoutV" class="cl"><a href="javascript:;" title=""><img src="images/h_list.png" alt=""></a></li>
+            <li id="layoutH" class="cl on"><a href="javascript:;" title=""><img src="images/v_list.png" alt=""></a></li>
+            <li><a href="" title=""><img src="images/gototop.png" alt=""></a></li>
+        </ul>
+    </div>
+    <footer class="main_footer flexbox main_footerfixed">
+        <a href="首页.html" title="" class="flex1">
+            <img src="images/icon_shouye.png" alt="">
+            <br/>首页
+        </a>
+        <a href="资讯.html" title="" class="flex1">
+            <img src="images/icon_zixun.png" alt="">
+            <br/>资讯
+        </a>
+        <a href="发布土地.html" title="" class="flex1">
+            <img src="images/icon_fabu.png" alt="">
+            <br/>发布土地
+        </a>
+        <a href="土地列表页.html" title="" class="on flex1">
+            <img src="images/icon_liuzhan_select.png" alt="">
+            <br/>土地流转
+        </a>
+        <a href="我的.html" title="" class="flex1">
+            <img src="images/icon_wode.png" alt="">
+            <br/>我的
+        </a>
+    </footer>
+</div>
+
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<!-- 列表页布局切换 -->
+<script type="text/javascript">
+(function(){
+    $("#layoutV").click(function(){
+        if($(this).className = 'cl'){
+            $("#layoutTarget").addClass("landTransfer_content").removeClass("lands_listCon");
+            $(this).addClass("on");
+            $("#layoutH").removeClass("on");
+        }
+        return false;
+    });
+    $("#layoutH").click(function(){
+        if($(this).className = 'cl'){
+            $("#layoutTarget").addClass("lands_listCon").removeClass("landTransfer_content");
+            $(this).addClass("on");
+            $("#layoutV").removeClass("on");
+        }
+        return false;
+    });
+
+})(jQuery);
+</script>
+</body>
+
+</html>
